@@ -1,6 +1,6 @@
 import TextoCentral from "../components/TextoCentral"
 
-export default () => {
+export default ({navigation}) => {
     return(
         <TextoCentral corFundo='#e53935'>
             Tela A
