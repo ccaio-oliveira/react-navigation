@@ -13,7 +13,7 @@ export default ({ children, avancar, navigation, voltar }) => {
                 {avancar 
                     ?   <Button 
                             title="Avançar" 
-                            onPress={() => navigation.navigate(avancar)} 
+                            onPress={() => navigation.push(avancar)} 
                         /> 
                     : false}
             </View>
