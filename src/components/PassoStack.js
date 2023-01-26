@@ -1,6 +1,6 @@
 import { View, Text, Button } from "react-native"
 
-export default ({ children, avancar, navigation, voltar }) => {
+export default ({ children, avancar, navigation, voltar, avancarParams }) => {
     return (
         <View style={{ flex: 1}}>
             <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
@@ -13,7 +13,7 @@ export default ({ children, avancar, navigation, voltar }) => {
                 {avancar 
                     ?   <Button 
                             title="Avançar" 
-                            onPress={() => navigation.push(avancar)} 
+                            onPress={() => navigation.navigate(avancar, avancarParams)} 
                         /> 
                     : false}
             </View>

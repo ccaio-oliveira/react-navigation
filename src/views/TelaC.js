@@ -1,9 +1,10 @@
 import TextoCentral from "../components/TextoCentral"
 
-export default () => {
+export default ({route}) => {
+    const {numero} = route.params;
     return(
         <TextoCentral corFundo='#9932cd'>
-            Tela C
+            Tela C - {numero}
         </TextoCentral>
     )
 }
