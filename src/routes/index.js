@@ -5,10 +5,8 @@ import Tab from './Tab';
 
 export default () => {
     return (
-        <SafeAreaView style={{ flex: 1 }}>
-            <NavigationContainer>
-                <Tab />
-            </NavigationContainer>
-        </SafeAreaView>
+        <NavigationContainer>
+            <Tab />
+        </NavigationContainer>
     )
 }
